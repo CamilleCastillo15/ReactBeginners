@@ -22,7 +22,12 @@
                 
                     return(
                     
-                        <h2>{this.props.user} aime manger {this.props.food}</h2>
+                        <div>
+                        
+                            <h3> {this.props.user} </h3>
+                            <h4> {this.props.children} </h4>
+                        
+                        </div>
                     
                     );
                 
@@ -33,10 +38,8 @@
             React.render(
             
                     <div>
-                        <CamilleComponent user="Cam1" food="des pâtes"/>
-                        <CamilleComponent user="Cam2" food="des tomates"/>
-                        <CamilleComponent user="Cam3" food="du fromage"/>
-                        <CamilleComponent user="Cam4" food="des bonbons"/>
+                        <CamilleComponent user="Cam1">Cette fille est trop bien</CamilleComponent>
+                        <CamilleComponent user="Cam2">Cette fille est bien aussi</CamilleComponent>
                     </div>, 
                     document.getElementById('content')
                     
